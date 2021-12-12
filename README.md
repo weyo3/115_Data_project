@@ -16,3 +16,7 @@ caption: Figure 1 shows the first two principle components that explain 73% of t
 
 ## Data Sources
 I obtained the data from the [Washington State Ecology](https://ecology.wa.gov/Research-Data?type=2&topics=&cats=&searchtext=Washington+Reported+Point+Source+Emissions+(2009+%e2%80%93+2019)&searchmode=allwords) website. The data included emissions data from 2009 to 2019, that included particle matter 10 (PM), PM 2.5, sulfur dioxide (SO2), nitrogen oxide (NOx), volatile organic compounds (VOCs), carbon monoxide (CO), and ammonia (NH3). The companies are also categorized in criteria air pollutants (CAP), hazardous air pollutants (HAP) major, HAP & CAP major, non-major, synthetic non-major, and unknown.  There are 407 companies from 29 counties in Washington state that are reported in this data set.
+
+## Data Processing
+
+The main issue for this data set is that it has a large amount of missing data. The missing data is from multiple columns: PM10, PM2.5, SO2, VOCs, CO, and NH3 columns. To correct this, I used the is.na() function to find all of missing data in these columns. After identifying these cells, then I used the na.omit() function that omits the rows with missing data in these columns. After the data processing, there remains 731 observations, and 145 companies throughout 19 counties in Washington state.
