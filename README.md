@@ -4,7 +4,7 @@
 
 ## Motivation
 
-Health is a huge concern to everyone, or it should be. Our health is affected by the foods we eat and the environment we live in. Nowadays there is air quality control systems where it simply states how good or bad the air quality is at your location. The PMEL Carbon Group of Seattle Washington conducted [research](https://www.pmel.noaa.gov/co2/story/WA+State+Emissions) in 2002 that shows emissions from different sources. Those are: commercial, industrial, residential, electric production, and mobile (cars and other type of vehicles). I wanted to take a further look into the specific biproducts that the companies produced. The question I am trying to investigate is whether the emissions products from these companies are strictly correlated with each other or are they dependent on the type of company. 
+Health is a huge concern to everyone, or it should be. Our health is affected by the foods we eat and the environment we live in. Nowadays there is air quality control systems where it simply states how good or bad the air quality is at your location. The PMEL Carbon Group of Seattle Washington conducted [research](https://www.pmel.noaa.gov/co2/story/WA+State+Emissions) in 2002 that shows emissions from different sources. Those are: commercial, industrial, residential, electric production, and mobile (cars and other type of vehicles). I wanted to take a further look into the specific biproducts that companies produced. The question I am trying to investigate is whether the emissions products from these companies are strictly correlated with each other or are they dependent on the type of company. 
 
 ## Figure 1
 
