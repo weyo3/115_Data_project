@@ -1,6 +1,6 @@
 # 115_Data_project
 
-## Washington Emissions data
+## Washington Emissions Data
 
 
 ## Figure 1
