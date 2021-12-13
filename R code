@@ -1,0 +1,88 @@
+Emm <- read_csv("Wa_emm_report3.csv")
+head(Emm)
+sum(is.na(Emm))
+New_Emm <- na.omit(Emm)
+Emm_D <- New_Emm[,5:11]
+Emm_data <- prcomp(Emm_D,center=TRUE, scale=TRUE)
+summary(Emm_data)
+New_Emm$pc1 <- Emm_data$x[,1]
+New_Emm$pc2 <- Emm_data$x[,2]
+
+ggplot(New_Emm,aes(x=pc1,y=pc2,color=as.factor(Category))) +
+  geom_point()+
+  labs(title = "First Two Principle Components explains 73% of the Variance in the Data set")
+write.table(New_Emm, file = "New_emm.csv", sep = ",")
+
+P_emm <- read_csv("Pollutants.csv")
+
+boxplot(P_emm)
+summary(P_emm)
+IQR(P_emm$PM10)
+Q<-quantile(P_emm$PM10, probs = c(.25, .75),na.rm = FALSE)
+up<-Q[2]+1.5*29.1995
+low<-Q[1]-1.5*29.1995
+eliminated<- subset(P_emm, P_emm$PM10 > (Q[1] - 1.5*29.1995) & P_emm$PM10 < (Q[2]+1.5*29.1995))
+boxplot(eliminated)
+
+ggplot(P_emm, aes(x=PM10))+
+  geom_histogram()+
+  labs(x='PM10 in Tons',y='Frequency',title = 'Histogram of PM10')+
+  geom_vline(aes(xintercept=mean(P_emm$PM10),color='mean'),show.legend=TRUE,size=2)+
+  scale_color_manual(name='Statistics',values = c(mean='red'))
+ggplot(P_emm, aes(x=PM2.5))+
+  geom_histogram()+
+   labs(x='PM2.5 in Tons',y='Frequency',title = 'Histogram of PM2.5')+
+  geom_vline(aes(xintercept=mean(P_emm$PM2.5),color='mean'),show.legend=TRUE,size=2)+
+  scale_color_manual(name='Statistics',values = c(mean='red'))
+ggplot(P_emm, aes(x=SO2))+
+  geom_histogram()+
+    labs(x='SO2 in Tons',y='Frequency',title = 'Histogram of SO2')+
+  geom_vline(aes(xintercept=mean(P_emm$SO2),color='mean'),show.legend=TRUE,size=2)+
+  scale_color_manual(name='Statistics',values = c(mean='red'))
+ggplot(P_emm, aes(x=NOX))+
+  geom_histogram()+
+  labs(x='NOX in Tons',y='Frequency',title = 'Histogram of NOX')+
+  geom_vline(aes(xintercept=mean(P_emm$NOX),color='mean'),show.legend=TRUE,size=2)+
+  scale_color_manual(name='Statistics',values = c(mean='red'))
+ggplot(P_emm, aes(x=VOC))+
+  geom_histogram()+
+    labs(x='VOC in Tons',y='Frequency',title = 'Histogram of VOC')+
+  geom_vline(aes(xintercept=mean(P_emm$VOC),color='mean'),show.legend=TRUE,size=2)+
+  scale_color_manual(name='Statistics',values = c(mean='red'))
+ggplot(P_emm, aes(x=CO))+
+  geom_histogram()+
+    labs(x='CO in Tons',y='Frequency',title = 'Histogram of CO')+
+  geom_vline(aes(xintercept=mean(P_emm$CO),color='mean'),show.legend=TRUE,size=2)+
+  scale_color_manual(name='Statistics',values = c(mean='red'))
+ggplot(P_emm, aes(x=NH3))+
+  geom_histogram()+
+    labs(x='NH3 in Tons',y='Frequency',title = 'Histogram of NH3')+
+  geom_vline(aes(xintercept=mean(P_emm$NH3),color='mean'),show.legend=TRUE,size=2)+
+  scale_color_manual(name='Statistics',values = c(mean='red'))
+cor(New_Emm[5:11])
+
+ggplot(New_Emm,aes(x=PM10,y=PM2.5,col=as.factor(Category)))+
+  scale_color_discrete(name='Category')+
+  geom_smooth(method = 'lm')+
+  geom_point()
+
+ggplot(New_Emm,aes(x=PM2.5,y=CO,col=as.factor(Category)))+
+  scale_color_discrete(name='Category')+
+  geom_smooth(method = 'lm')+
+  geom_point()
+ggplot(New_Emm,aes(x=PM10,y=CO,col=as.factor(Category)))+
+  scale_color_discrete(name='Category')+
+  geom_smooth(method = 'lm')+
+  geom_point()
+ggplot(New_Emm,aes(x=SO2,y=CO,col=as.factor(Category)))+
+  scale_color_discrete(name='Category')+
+  geom_smooth(method = 'lm')+
+  geom_point()
+ggplot(New_Emm,aes(x=NOX,y=CO,col=as.factor(Category)))+
+  scale_color_discrete(name='Category')+
+  geom_smooth(method = 'lm')+
+  geom_point()
+ggplot(New_Emm,aes(x=VOC,y=CO,col=as.factor(Category)))+
+  scale_color_discrete(name='Category')+
+  geom_smooth(method = 'lm')+
+  geom_point()
