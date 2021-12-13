@@ -29,7 +29,7 @@ I created histograms for each of the emission products showing the range of outp
  
 ## Analysis
  
- I chose to analyze each emission against the CO variable that is mostly produced. To check the correlation I performed the Pearson correlation function cor() and observed that the following variables:PM10,PM2.5,SO2,VOC, NOX are positively correlated to the Carbon Monoxide emission. 
+ I chose to analyze each emission against the CO variable that is mostly produced. To check the correlation I performed the Pearson correlation function cor() and observed that the following variables: PM10, PM2.5, SO2, VOC, NOX are positively correlated to the Carbon Monoxide emission. 
  
 # <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/Corr_.PNG">
  
