@@ -27,12 +27,12 @@ I created histograms for each of the emission products showing the range of outp
 
 # <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/PM10.png"> <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/PM2.5.png"> <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/SO2.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/NOX.png"> <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/VOC.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/NH3.png">
  
- ## Analysis
+## Analysis
  
- I chose to analyze each emission against the CO variable that is mostly produced. To check the correlation I performed the Pearson correlation function cor() and observed that the following variables are positively correlated to the Carbon Monoxide emission. 
+ I chose to analyze each emission against the CO variable that is mostly produced. To check the correlation I performed the Pearson correlation function cor() and observed that the following variables:PM10,PM2.5,SO2,VOC, NOX are positively correlated to the Carbon Monoxide emission. 
  
- #<image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/Corr_.PNG">
+# <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/Corr_.PNG">
  
- I then created scatterplots with points categorized by HAP, HAP major, CAP, HAP & CAP major, non-major, synthetic non-major, and unknown. I then added a simple linear regression to the model that contributes to the analysis of correlation between the variables and carbon monoxide.
+I then created scatterplots with points categorized by HAP, HAP major, CAP, HAP & CAP major, non-major, synthetic non-major, and unknown. I then added a simple linear regression to the model that contributes to the analysis of correlation between the variables and carbon monoxide.
  
- #<image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/COrPM10_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CorSO2_CO.png"><img src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CorPM_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CORVOC_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CORNOX_CO.png">
+# <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/COrPM10_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CorSO2_CO.png"><img src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CorPM_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CORVOC_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CORNOX_CO.png">
