@@ -21,4 +21,4 @@ I obtained the data from the [Washington State Ecology](https://ecology.wa.gov/R
 
 The main issue for this data set is that it has a large amount of missing data. The missing data is from multiple columns: PM10, PM2.5, SO2, VOCs, CO, and NH3 columns. To correct this, I used the is.na() function to find all of missing data in these columns. After identifying these cells, then I used the na.omit() function that omits the rows with missing data in these columns. Finally, there remained 731 observations, and 145 companies throughout 19 counties in Washington state.
 
-## <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/PM10.png" alt="home screen"style="float:left;margin-right:10px;"width="200"/> <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/PM2.5.png">
+## <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/PM10.png" alt="home screen"style="float:left;margin-right:10px;" width="200"/> <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/PM2.5.png">
