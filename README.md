@@ -36,3 +36,7 @@ I created histograms for each of the emission products showing the range of outp
 I then created scatterplots with points categorized by HAP, HAP major, CAP, HAP & CAP major, non-major, synthetic non-major, and unknown. I then added a simple linear regression to the model that contributes to the analysis of correlation between the variables and carbon monoxide.
  
 # <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/COrPM10_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CorSO2_CO.png"><img src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CorPM_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CORVOC_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CORNOX_CO.png">
+
+ ## Refrences
+Research & Data - Washington State Department of Ecology. (n.d.). Ecology.wa.gov. Retrieved December 13, 2021, from https://ecology.wa.gov/Research-Data?type=2&topics=&cats=&searchtext=Washington+Reported+Point+Source+Emissions+(2009+%e2%80%93+2019)&searchmode=allwords
+
