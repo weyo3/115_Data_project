@@ -29,4 +29,10 @@ I created histograms for each of the emission products showing the range of outp
  
  ## Analysis
  
+ I chose to analyze each emission against the CO variable that is mostly produced. To check the correlation I performed the Pearson correlation function cor() and observed that the following variables are positively correlated to the Carbon Monoxide emission. 
+ 
+ #<image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/Corr_.PNG">
+ 
+ I then created scatterplots with points categorized by HAP, HAP major, CAP, HAP & CAP major, non-major, synthetic non-major, and unknown. I then added a simple linear regression to the model that contributes to the analysis of correlation between the variables and carbon monoxide.
+ 
  #<image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/COrPM10_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CorSO2_CO.png"><img src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CorPM_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CORVOC_CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CORNOX_CO.png">
