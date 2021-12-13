@@ -27,3 +27,6 @@ I created histograms for each of the emission products showing the range of outp
 
 # <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/PM10.png"> <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/PM2.5.png"> <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/SO2.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/NOX.png"> <image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/VOC.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/CO.png"><image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/NH3.png">
  
+ ## Analysis
+ 
+ #<image src="https://raw.githubusercontent.com/weyo3/115_Data_project/main/Figures/COrPM10_CO.png">
